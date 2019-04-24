@@ -1,15 +1,33 @@
+@import "../../assets/base.less";
 
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+#register{
+    .register_form{
+        display: grid;
+        justify-content: center;
+        padding-top: 30px;
+
+        h3{
+            margin: 5px 0;
+        }
+        .register_input{
+            width: 400px;
+        }
+        button{
+            width: 70px;
+            padding: 2px 5px;
+            border: 1px solid #DCDFE6;
+            margin: 15px 0;
+            justify-self: end;
+        }
+        span{
+            justify-self: center;
+            font-size: 12px;
+            color: @fontColor;
+            margin-top: 20px;
+            a{
+                color: @bgColor;
+                cursor: pointer;
+            }
+        }
+    }
 }

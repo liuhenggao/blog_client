@@ -1,15 +1,55 @@
 
-h1, h2 {
-  font-weight: normal;
+@import "../../assets/base.less";
+
+#user{
+    figure{
+        margin-left: 0;
+        img{
+            width: 60px;
+            border: 1px solid @titleColor;
+            border-radius: 60px;
+            vertical-align: middle;
+        }
+        span{
+            vertical-align: middle;
+            margin-left: 15px;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+    }
+    section{
+        .myArticle{
+            display: grid;
+            grid: auto auto auto/80px 1fr;
+            margin-top: 30px;
+            color: @userColor;
+           .time{
+               justify-self: center;
+               font-size: 40px;
+               color: @fontColor;
+           }
+           .yearMonth{
+               text-align: center;
+               justify-self: center;
+               margin: auto 0;
+               color: #aaaaaa;
+           }
+
+            h3{
+                grid-column: 2 /span 1;
+                grid-row: 1;
+            }
+
+            p{
+                grid-column: 2 /span 1;
+                grid-row: 2;
+                margin: 0;
+            }
+        }
+    }
+    .block{
+        text-align: center;
+        margin-top: 30px;
+    }
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+

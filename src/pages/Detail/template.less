@@ -1,16 +1,39 @@
+@import "../../assets/base.less";
 
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+#detail{
+  figure{
+    display: grid;
+    grid: auto auto /80px 1fr;
+    margin: 30px 0;
 
+    img{
+      width: 60px;
+      border: 1px solid @titleColor;
+      border-radius: 60px;
+      grid-column: 1;
+      grid-row: 1 /span 2;
+      align-self: center;
+    }
+
+    h3{
+      margin: 0;
+      align-self: center;
+    }
+
+    span{
+      grid-column: 2;
+      grid-row: 2;
+
+      span.author{
+        color: @bgColor;
+        font-size: 12px;
+      }
+      span.time{
+        color: @fontColor;
+      }
+    }
+  }
+  .article{
+    margin-top: 40px;
+  }
+}

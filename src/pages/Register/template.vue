@@ -1,6 +1,16 @@
 <template>
   <div id="register">
-    <h2>注册</h2>
+    <div class="register_form">
+      <h3>用户名</h3>
+      <el-input class="register_input" v-model="username" placeholder="请输入用户名" clearable></el-input>
+      <h3>密码</h3>
+      <el-input class="register_input" v-model="password" placeholder="请输入密码" show-password></el-input>
+      <el-button @click="onRegister">立即注册</el-button>
+      <span>
+        已有账号，
+        <a>立即登录</a>
+      </span>
+    </div>
   </div>
 </template>
 

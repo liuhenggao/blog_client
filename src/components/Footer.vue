@@ -1,11 +1,12 @@
 <template>
-    <footer class="footer">©liuhenggao.com 2019 name: blog-client</footer>
+    <footer class="footer">
+        <small>©liuhenggao.com 2019 name: blog-client</small>
+    </footer>
 </template>
 
 <style lang="less" scoped>
     .footer{
         background: #eeeeee;
-        font-size: 14px;
         color: #aaaaaa;
         text-align: center;
     }
