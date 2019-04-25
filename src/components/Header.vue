@@ -86,6 +86,11 @@ header.no_login {
   button {
     margin: 30px 10px 0;
     padding: 4px 15px;
+
+    span{
+      line-height: 28px;
+      color: @bgColor;
+    }
   }
 }
 

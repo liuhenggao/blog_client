@@ -8,7 +8,7 @@
       <el-button @click="onRegister">立即注册</el-button>
       <span>
         已有账号，
-        <a>立即登录</a>
+        <router-link to="/login">立即登录</router-link>
       </span>
     </div>
   </div>
